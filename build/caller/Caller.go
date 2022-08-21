@@ -30,7 +30,7 @@ var (
 
 // CallerMetaData contains all meta data concerning the Caller contract.
 var CallerMetaData = &bind.MetaData{
-	ABI: "[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"someAction\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"someUnsafeAction\",\"outputs\":[],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"storeAction\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]",
+	ABI: "[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"someAction\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"someUnsafeAction\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"storeAction\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]",
 }
 
 // CallerABI is the input ABI used to generate the binding from.
@@ -210,33 +210,25 @@ func (_Caller *CallerCallerSession) SomeAction(addr common.Address) (*big.Int, e
 	return _Caller.Contract.SomeAction(&_Caller.CallOpts, addr)
 }
 
-// SomeUnsafeAction is a free data retrieval call binding the contract method 0x748fa599.
+// SomeUnsafeAction is a paid mutator transaction binding the contract method 0x748fa599.
 //
-// Solidity: function someUnsafeAction(address addr) pure returns()
-func (_Caller *CallerCaller) SomeUnsafeAction(opts *bind.CallOpts, addr common.Address) error {
-	var out []interface{}
-	err := _Caller.contract.Call(opts, &out, "someUnsafeAction", addr)
-
-	if err != nil {
-		return err
-	}
-
-	return err
-
+// Solidity: function someUnsafeAction(address addr) returns(bool)
+func (_Caller *CallerTransactor) SomeUnsafeAction(opts *bind.TransactOpts, addr common.Address) (*types.Transaction, error) {
+	return _Caller.contract.Transact(opts, "someUnsafeAction", addr)
 }
 
-// SomeUnsafeAction is a free data retrieval call binding the contract method 0x748fa599.
+// SomeUnsafeAction is a paid mutator transaction binding the contract method 0x748fa599.
 //
-// Solidity: function someUnsafeAction(address addr) pure returns()
-func (_Caller *CallerSession) SomeUnsafeAction(addr common.Address) error {
-	return _Caller.Contract.SomeUnsafeAction(&_Caller.CallOpts, addr)
+// Solidity: function someUnsafeAction(address addr) returns(bool)
+func (_Caller *CallerSession) SomeUnsafeAction(addr common.Address) (*types.Transaction, error) {
+	return _Caller.Contract.SomeUnsafeAction(&_Caller.TransactOpts, addr)
 }
 
-// SomeUnsafeAction is a free data retrieval call binding the contract method 0x748fa599.
+// SomeUnsafeAction is a paid mutator transaction binding the contract method 0x748fa599.
 //
-// Solidity: function someUnsafeAction(address addr) pure returns()
-func (_Caller *CallerCallerSession) SomeUnsafeAction(addr common.Address) error {
-	return _Caller.Contract.SomeUnsafeAction(&_Caller.CallOpts, addr)
+// Solidity: function someUnsafeAction(address addr) returns(bool)
+func (_Caller *CallerTransactorSession) SomeUnsafeAction(addr common.Address) (*types.Transaction, error) {
+	return _Caller.Contract.SomeUnsafeAction(&_Caller.TransactOpts, addr)
 }
 
 // StoreAction is a paid mutator transaction binding the contract method 0xe8a62235.
