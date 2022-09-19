@@ -1,11 +1,9 @@
-mkdir -p build/caller &&
-mkdir -p build/caller/deploy &&
+solc --abi --bin contracts/callee.sol -o build &&
+abigen --bin=./build/Callee.bin --abi=./build/Callee.abi --pkg=Callee --out=pkg/Callee.go
 
-solc --overwrite --abi contracts/caller/Caller.sol --bin contracts/caller/Caller.sol -o build/caller &&
-solc --overwrite --abi contracts/caller/Callee.sol --bin contracts/caller/Callee.sol -o build/caller &&
+solc  --overwrite  --abi --bin contracts/caller.sol -o build &&
+abigen --bin=./build/Caller.bin --abi=./build/Caller.abi --pkg=Caller --out=pkg/Caller.go
 
-abigen --abi=build/caller/Caller.abi --pkg=caller --type=caller --out=build/caller/Caller.go &&
-abigen --abi=build/caller/Caller.abi --pkg=deploy --type=caller --out=build/caller/deploy/DeployCaller.go --bin=build/caller/Caller.bin &&
 
-abigen --abi=build/caller/Callee.abi --pkg=caller --type=callee --out=build/caller/Callee.go &&
-abigen --abi=build/caller/Callee.abi --pkg=deploy --type=callee --out=build/caller/deploy/DeployCallee.go --bin=build/caller/Callee.bin
+solc  --overwrite  --abi --bin contracts/Counter.sol -o build &&
+abigen --bin=./build/Counter.bin --abi=./build/Counter.abi --pkg=Counter --out=pkg/Counter.go
