@@ -29,7 +29,14 @@ func (suite *CallerTestSuite) TestDeploy() {
 	}
 	fmt.Println("sc couter = ", counterAddr.Hex())
 
+	storageAddr, storageTx, _, err := pkg.DeploySimpleStorage(auth, suite.client)
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("sc storage = ", storageAddr.Hex())
+
 	suite.Waiting(tx.Hash())
 	suite.Waiting(calleeTx.Hash())
 	suite.Waiting(counterTx.Hash())
+	suite.Waiting(storageTx.Hash())
 }

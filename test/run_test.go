@@ -5,6 +5,7 @@ import (
 	"github.com/0xhoang/solidity/pkg"
 	"github.com/ethereum/go-ethereum/common"
 	"log"
+	"math/big"
 	"time"
 )
 
@@ -74,12 +75,37 @@ func (suite *CallerTestSuite) TestCounter() {
 	}
 
 	fmt.Println("tx2 = ", tx2.String())
-	
+
 	tx3, err := sc.Desc(auth)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	fmt.Println("tx3 = ", tx3.Hash().String())
+	time.Sleep(10 * time.Second)
+}
+
+func (suite *CallerTestSuite) TestSimpleStore() {
+	scAddr := common.HexToAddress("0x7301c8405154D962b1F3B7Fd0a663eF1b131Ff44")
+	auth := suite.getBroker()
+
+	sc, err := pkg.NewSimpleStorage(scAddr, suite.client)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	tx1, err := sc.Set(auth, big.NewInt(4e18))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("tx2 = ", tx1.Hash().String())
+
+	tx3, err := sc.Get(nil)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	fmt.Println("tx3 = ", tx3.String())
 	time.Sleep(10 * time.Second)
 }
