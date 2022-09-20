@@ -6,5 +6,5 @@ contract EtherUnits {
     bool public isOneWei = 1 wei == 1;
 
     uint public oneEther = 1 ether;
-    bool public oneEther = 1 ether == 1e18;
+    bool public isOneEther = 1 ether == 1e18;
 }
