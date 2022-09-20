@@ -517,23 +517,23 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "57:131:5:-:0;;;92:1;76:17;;57:131;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "57:131:5:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;100:86;;;:::i;:::-;;76:17;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;100:86;136:44;143:4;136:44;;;168:1;163;;:6;;;;;;;:::i;:::-;;;;;;;;136:44;;;100:86::o;76:17::-;;;;:::o;7:77:16:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o;442:180::-;490:77;487:1;480:88;587:4;584:1;577:15;611:4;608:1;601:15;628:191;668:3;687:20;705:1;687:20;:::i;:::-;682:25;;721:20;739:1;721:20;:::i;:::-;716:25;;764:1;761;757:9;750:16;;785:3;782:1;779:10;776:36;;;792:18;;:::i;:::-;776:36;628:191;;;;:::o",
+  "sourceMap": "57:131:7:-:0;;;92:1;76:17;;57:131;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:131:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;100:86;;;:::i;:::-;;76:17;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;100:86;136:44;143:4;136:44;;;168:1;163;;:6;;;;;;;:::i;:::-;;;;;;;;136:44;;;100:86::o;76:17::-;;;;:::o;7:77:16:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o;442:180::-;490:77;487:1;480:88;587:4;584:1;577:15;611:4;608:1;601:15;628:191;668:3;687:20;705:1;687:20;:::i;:::-;682:25;;721:20;739:1;721:20;:::i;:::-;716:25;;764:1;761;757:9;750:16;;785:3;782:1;779:10;776:36;;;792:18;;:::i;:::-;776:36;628:191;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract Gas {\n    uint public i = 0;\n\n    function forever() public {\n        while (true) {\n            i += 1;\n        }\n    }\n}\n",
   "sourcePath": "/Users/lap02139/Documents/Work3/solidty/contracts/Gas.sol",
   "ast": {
     "absolutePath": "project:/contracts/Gas.sol",
     "exportedSymbols": {
       "Gas": [
-        215
+        346
       ]
     },
-    "id": 216,
+    "id": 347,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 200,
+        "id": 331,
         "literals": [
           "solidity",
           "^",
@@ -541,7 +541,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:23:5"
+        "src": "32:23:7"
       },
       {
         "abstract": false,
@@ -550,24 +550,24 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 215,
+        "id": 346,
         "linearizedBaseContracts": [
-          215
+          346
         ],
         "name": "Gas",
-        "nameLocation": "66:3:5",
+        "nameLocation": "66:3:7",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
             "functionSelector": "e5aa3d58",
-            "id": 203,
+            "id": 334,
             "mutability": "mutable",
             "name": "i",
-            "nameLocation": "88:1:5",
+            "nameLocation": "88:1:7",
             "nodeType": "VariableDeclaration",
-            "scope": 215,
-            "src": "76:17:5",
+            "scope": 346,
+            "src": "76:17:7",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -575,10 +575,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 201,
+              "id": 332,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "76:4:5",
+              "src": "76:4:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -586,14 +586,14 @@
             },
             "value": {
               "hexValue": "30",
-              "id": 202,
+              "id": 333,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "92:1:5",
+              "src": "92:1:7",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_0_by_1",
                 "typeString": "int_const 0"
@@ -604,30 +604,30 @@
           },
           {
             "body": {
-              "id": 213,
+              "id": 344,
               "nodeType": "Block",
-              "src": "126:60:5",
+              "src": "126:60:7",
               "statements": [
                 {
                   "body": {
-                    "id": 211,
+                    "id": 342,
                     "nodeType": "Block",
-                    "src": "149:31:5",
+                    "src": "149:31:7",
                     "statements": [
                       {
                         "expression": {
-                          "id": 209,
+                          "id": 340,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
-                            "id": 207,
+                            "id": 338,
                             "name": "i",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 203,
-                            "src": "163:1:5",
+                            "referencedDeclaration": 334,
+                            "src": "163:1:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -637,95 +637,95 @@
                           "operator": "+=",
                           "rightHandSide": {
                             "hexValue": "31",
-                            "id": 208,
+                            "id": 339,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "number",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "168:1:5",
+                            "src": "168:1:7",
                             "typeDescriptions": {
                               "typeIdentifier": "t_rational_1_by_1",
                               "typeString": "int_const 1"
                             },
                             "value": "1"
                           },
-                          "src": "163:6:5",
+                          "src": "163:6:7",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "id": 210,
+                        "id": 341,
                         "nodeType": "ExpressionStatement",
-                        "src": "163:6:5"
+                        "src": "163:6:7"
                       }
                     ]
                   },
                   "condition": {
                     "hexValue": "74727565",
-                    "id": 206,
+                    "id": 337,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "143:4:5",
+                    "src": "143:4:7",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
                     "value": "true"
                   },
-                  "id": 212,
+                  "id": 343,
                   "nodeType": "WhileStatement",
-                  "src": "136:44:5"
+                  "src": "136:44:7"
                 }
               ]
             },
             "functionSelector": "9ff9a603",
-            "id": 214,
+            "id": 345,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "forever",
-            "nameLocation": "109:7:5",
+            "nameLocation": "109:7:7",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 204,
+              "id": 335,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "116:2:5"
+              "src": "116:2:7"
             },
             "returnParameters": {
-              "id": 205,
+              "id": 336,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "126:0:5"
+              "src": "126:0:7"
             },
-            "scope": 215,
-            "src": "100:86:5",
+            "scope": 346,
+            "src": "100:86:7",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 216,
-        "src": "57:131:5",
+        "scope": 347,
+        "src": "57:131:7",
         "usedErrors": []
       }
     ],
-    "src": "32:157:5"
+    "src": "32:157:7"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.16+commit.07a7930e.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.9",
-  "updatedAt": "2022-09-20T01:34:20.878Z",
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-09-20T02:28:12.026Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -523,23 +523,23 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "57:177:4:-:0;;;104:5;83:26;;147:1;138:5;:10;115:33;;;;;;;;;;;;;;;;;;;;178:7;155:30;;227:4;216:7;:15;191:40;;;;;;;;;;;;;;;;;;;;57:177;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "57:177:4:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;115:33;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;83:26;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;191:40;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;155:30;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;115:33;;;;;;;;;;;;;:::o;83:26::-;;;;:::o;191:40::-;;;;;;;;;;;;;:::o;155:30::-;;;;:::o;7:90:16:-;41:7;84:5;77:13;70:21;59:32;;7:90;;;:::o;103:109::-;184:21;199:5;184:21;:::i;:::-;179:3;172:34;103:109;;:::o;218:210::-;305:4;343:2;332:9;328:18;320:26;;356:65;418:1;407:9;403:17;394:6;356:65;:::i;:::-;218:210;;;;:::o;434:77::-;471:7;500:5;489:16;;434:77;;;:::o;517:118::-;604:24;622:5;604:24;:::i;:::-;599:3;592:37;517:118;;:::o;641:222::-;734:4;772:2;761:9;757:18;749:26;;785:71;853:1;842:9;838:17;829:6;785:71;:::i;:::-;641:222;;;;:::o",
+  "sourceMap": "57:177:6:-:0;;;104:5;83:26;;147:1;138:5;:10;115:33;;;;;;;;;;;;;;;;;;;;178:7;155:30;;227:4;216:7;:15;191:40;;;;;;;;;;;;;;;;;;;;57:177;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:177:6:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;115:33;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;83:26;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;191:40;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;155:30;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;115:33;;;;;;;;;;;;;:::o;83:26::-;;;;:::o;191:40::-;;;;;;;;;;;;;:::o;155:30::-;;;;:::o;7:90:16:-;41:7;84:5;77:13;70:21;59:32;;7:90;;;:::o;103:109::-;184:21;199:5;184:21;:::i;:::-;179:3;172:34;103:109;;:::o;218:210::-;305:4;343:2;332:9;328:18;320:26;;356:65;418:1;407:9;403:17;394:6;356:65;:::i;:::-;218:210;;;;:::o;434:77::-;471:7;500:5;489:16;;434:77;;;:::o;517:118::-;604:24;622:5;604:24;:::i;:::-;599:3;592:37;517:118;;:::o;641:222::-;734:4;772:2;761:9;757:18;749:26;;785:71;853:1;842:9;838:17;829:6;785:71;:::i;:::-;641:222;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract EtherUnits {\n    uint public oneWei = 1 wei;\n    bool public isOneWei = 1 wei == 1;\n\n    uint public oneEther = 1 ether;\n    bool public isOneEther = 1 ether == 1e18;\n}\n",
   "sourcePath": "/Users/lap02139/Documents/Work3/solidty/contracts/EtherUnits.sol",
   "ast": {
     "absolutePath": "project:/contracts/EtherUnits.sol",
     "exportedSymbols": {
       "EtherUnits": [
-        198
+        329
       ]
     },
-    "id": 199,
+    "id": 330,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 181,
+        "id": 312,
         "literals": [
           "solidity",
           "^",
@@ -547,7 +547,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:23:4"
+        "src": "32:23:6"
       },
       {
         "abstract": false,
@@ -556,24 +556,24 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 198,
+        "id": 329,
         "linearizedBaseContracts": [
-          198
+          329
         ],
         "name": "EtherUnits",
-        "nameLocation": "66:10:4",
+        "nameLocation": "66:10:6",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
             "functionSelector": "4fb2e0be",
-            "id": 184,
+            "id": 315,
             "mutability": "mutable",
             "name": "oneWei",
-            "nameLocation": "95:6:4",
+            "nameLocation": "95:6:6",
             "nodeType": "VariableDeclaration",
-            "scope": 198,
-            "src": "83:26:4",
+            "scope": 329,
+            "src": "83:26:6",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -581,10 +581,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 182,
+              "id": 313,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "83:4:4",
+              "src": "83:4:6",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -592,14 +592,14 @@
             },
             "value": {
               "hexValue": "31",
-              "id": 183,
+              "id": 314,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "104:5:4",
+              "src": "104:5:6",
               "subdenomination": "wei",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_1_by_1",
@@ -612,13 +612,13 @@
           {
             "constant": false,
             "functionSelector": "28dc556f",
-            "id": 189,
+            "id": 320,
             "mutability": "mutable",
             "name": "isOneWei",
-            "nameLocation": "127:8:4",
+            "nameLocation": "127:8:6",
             "nodeType": "VariableDeclaration",
-            "scope": 198,
-            "src": "115:33:4",
+            "scope": 329,
+            "src": "115:33:6",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -626,10 +626,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 185,
+              "id": 316,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "115:4:4",
+              "src": "115:4:6",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -640,21 +640,21 @@
                 "typeIdentifier": "t_uint8",
                 "typeString": "uint8"
               },
-              "id": 188,
+              "id": 319,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 186,
+                "id": 317,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "138:5:4",
+                "src": "138:5:6",
                 "subdenomination": "wei",
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_1_by_1",
@@ -666,21 +666,21 @@
               "operator": "==",
               "rightExpression": {
                 "hexValue": "31",
-                "id": 187,
+                "id": 318,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "147:1:4",
+                "src": "147:1:6",
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_1_by_1",
                   "typeString": "int_const 1"
                 },
                 "value": "1"
               },
-              "src": "138:10:4",
+              "src": "138:10:6",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -691,13 +691,13 @@
           {
             "constant": false,
             "functionSelector": "d297a89f",
-            "id": 192,
+            "id": 323,
             "mutability": "mutable",
             "name": "oneEther",
-            "nameLocation": "167:8:4",
+            "nameLocation": "167:8:6",
             "nodeType": "VariableDeclaration",
-            "scope": 198,
-            "src": "155:30:4",
+            "scope": 329,
+            "src": "155:30:6",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -705,10 +705,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 190,
+              "id": 321,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "155:4:4",
+              "src": "155:4:6",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -716,14 +716,14 @@
             },
             "value": {
               "hexValue": "31",
-              "id": 191,
+              "id": 322,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "178:7:4",
+              "src": "178:7:6",
               "subdenomination": "ether",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_1000000000000000000_by_1",
@@ -736,13 +736,13 @@
           {
             "constant": false,
             "functionSelector": "cf0f5d29",
-            "id": 197,
+            "id": 328,
             "mutability": "mutable",
             "name": "isOneEther",
-            "nameLocation": "203:10:4",
+            "nameLocation": "203:10:6",
             "nodeType": "VariableDeclaration",
-            "scope": 198,
-            "src": "191:40:4",
+            "scope": 329,
+            "src": "191:40:6",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -750,10 +750,10 @@
               "typeString": "bool"
             },
             "typeName": {
-              "id": 193,
+              "id": 324,
               "name": "bool",
               "nodeType": "ElementaryTypeName",
-              "src": "191:4:4",
+              "src": "191:4:6",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -764,21 +764,21 @@
                 "typeIdentifier": "t_uint64",
                 "typeString": "uint64"
               },
-              "id": 196,
+              "id": 327,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "lValueRequested": false,
               "leftExpression": {
                 "hexValue": "31",
-                "id": 194,
+                "id": 325,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "216:7:4",
+                "src": "216:7:6",
                 "subdenomination": "ether",
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_1000000000000000000_by_1",
@@ -790,21 +790,21 @@
               "operator": "==",
               "rightExpression": {
                 "hexValue": "31653138",
-                "id": 195,
+                "id": 326,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
                 "kind": "number",
                 "lValueRequested": false,
                 "nodeType": "Literal",
-                "src": "227:4:4",
+                "src": "227:4:6",
                 "typeDescriptions": {
                   "typeIdentifier": "t_rational_1000000000000000000_by_1",
                   "typeString": "int_const 1000000000000000000"
                 },
                 "value": "1e18"
               },
-              "src": "216:15:4",
+              "src": "216:15:6",
               "typeDescriptions": {
                 "typeIdentifier": "t_bool",
                 "typeString": "bool"
@@ -813,20 +813,20 @@
             "visibility": "public"
           }
         ],
-        "scope": 199,
-        "src": "57:177:4",
+        "scope": 330,
+        "src": "57:177:6",
         "usedErrors": []
       }
     ],
-    "src": "32:203:4"
+    "src": "32:203:6"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.16+commit.07a7930e.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.9",
-  "updatedAt": "2022-09-20T01:34:20.875Z",
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-09-20T02:28:12.025Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

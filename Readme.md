@@ -1,10 +1,13 @@
 ### Truffle
+
 - install: yarn install truffle -g
 - init: truffle init
 - compiler: truffle compile
 - deploy: truffle migrate --network development
+- develop: truffle develop
 
 ### Software version
+
 - Truffle v5.5.30 (core: 5.5.30)
 - Ganache v7.4.0
 - Solidity - 0.8.16 (solc-js)

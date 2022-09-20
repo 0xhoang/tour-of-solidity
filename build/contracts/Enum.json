@@ -229,7 +229,7 @@
                 }
               ]
             },
-            "name": "validator_assert_t_enum$_Status_$139",
+            "name": "validator_assert_t_enum$_Status_$270",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -272,7 +272,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_assert_t_enum$_Status_$139",
+                      "name": "validator_assert_t_enum$_Status_$270",
                       "nodeType": "YulIdentifier",
                       "src": "396:36:16"
                     },
@@ -284,7 +284,7 @@
                 }
               ]
             },
-            "name": "cleanup_t_enum$_Status_$139",
+            "name": "cleanup_t_enum$_Status_$270",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -321,7 +321,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "cleanup_t_enum$_Status_$139",
+                      "name": "cleanup_t_enum$_Status_$270",
                       "nodeType": "YulIdentifier",
                       "src": "542:27:16"
                     },
@@ -338,7 +338,7 @@
                 }
               ]
             },
-            "name": "convert_t_enum$_Status_$139_to_t_uint8",
+            "name": "convert_t_enum$_Status_$270_to_t_uint8",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -380,7 +380,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "convert_t_enum$_Status_$139_to_t_uint8",
+                          "name": "convert_t_enum$_Status_$270_to_t_uint8",
                           "nodeType": "YulIdentifier",
                           "src": "683:38:16"
                         },
@@ -401,7 +401,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_enum$_Status_$139_to_t_uint8_fromStack",
+            "name": "abi_encode_t_enum$_Status_$270_to_t_uint8_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -491,7 +491,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_enum$_Status_$139_to_t_uint8_fromStack",
+                      "name": "abi_encode_t_enum$_Status_$270_to_t_uint8_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "893:51:16"
                     },
@@ -503,7 +503,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_enum$_Status_$139__to_t_uint8__fromStack_reversed",
+            "name": "abi_encode_tuple_t_enum$_Status_$270__to_t_uint8__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -737,7 +737,7 @@
                 }
               ]
             },
-            "name": "validator_revert_t_enum$_Status_$139",
+            "name": "validator_revert_t_enum$_Status_$270",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -791,7 +791,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "validator_revert_t_enum$_Status_$139",
+                      "name": "validator_revert_t_enum$_Status_$270",
                       "nodeType": "YulIdentifier",
                       "src": "1537:36:16"
                     },
@@ -803,7 +803,7 @@
                 }
               ]
             },
-            "name": "abi_decode_t_enum$_Status_$139",
+            "name": "abi_decode_t_enum$_Status_$270",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -953,7 +953,7 @@
                           }
                         ],
                         "functionName": {
-                          "name": "abi_decode_t_enum$_Status_$139",
+                          "name": "abi_decode_t_enum$_Status_$270",
                           "nodeType": "YulIdentifier",
                           "src": "1861:30:16"
                         },
@@ -972,7 +972,7 @@
                 }
               ]
             },
-            "name": "abi_decode_tuple_t_enum$_Status_$139",
+            "name": "abi_decode_tuple_t_enum$_Status_$270",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -1000,29 +1000,29 @@
           }
         ]
       },
-      "contents": "{\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function validator_assert_t_enum$_Status_$139(value) {\n        if iszero(lt(value, 5)) { panic_error_0x21() }\n    }\n\n    function cleanup_t_enum$_Status_$139(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_Status_$139(value)\n    }\n\n    function convert_t_enum$_Status_$139_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_Status_$139(value)\n    }\n\n    function abi_encode_t_enum$_Status_$139_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_Status_$139_to_t_uint8(value))\n    }\n\n    function abi_encode_tuple_t_enum$_Status_$139__to_t_uint8__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_enum$_Status_$139_to_t_uint8_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() {\n        revert(0, 0)\n    }\n\n    function revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() {\n        revert(0, 0)\n    }\n\n    function validator_revert_t_enum$_Status_$139(value) {\n        if iszero(lt(value, 5)) { revert(0, 0) }\n    }\n\n    function abi_decode_t_enum$_Status_$139(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_enum$_Status_$139(value)\n    }\n\n    function abi_decode_tuple_t_enum$_Status_$139(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_enum$_Status_$139(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n}\n",
+      "contents": "{\n\n    function panic_error_0x21() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x21)\n        revert(0, 0x24)\n    }\n\n    function validator_assert_t_enum$_Status_$270(value) {\n        if iszero(lt(value, 5)) { panic_error_0x21() }\n    }\n\n    function cleanup_t_enum$_Status_$270(value) -> cleaned {\n        cleaned := value validator_assert_t_enum$_Status_$270(value)\n    }\n\n    function convert_t_enum$_Status_$270_to_t_uint8(value) -> converted {\n        converted := cleanup_t_enum$_Status_$270(value)\n    }\n\n    function abi_encode_t_enum$_Status_$270_to_t_uint8_fromStack(value, pos) {\n        mstore(pos, convert_t_enum$_Status_$270_to_t_uint8(value))\n    }\n\n    function abi_encode_tuple_t_enum$_Status_$270__to_t_uint8__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_enum$_Status_$270_to_t_uint8_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() {\n        revert(0, 0)\n    }\n\n    function revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() {\n        revert(0, 0)\n    }\n\n    function validator_revert_t_enum$_Status_$270(value) {\n        if iszero(lt(value, 5)) { revert(0, 0) }\n    }\n\n    function abi_decode_t_enum$_Status_$270(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_enum$_Status_$270(value)\n    }\n\n    function abi_decode_tuple_t_enum$_Status_$270(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_enum$_Status_$270(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n}\n",
       "id": 16,
       "language": "Yul",
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "57:442:3:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "57:442:3:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;189:20;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;296:69;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;216:74;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;443:54;;;:::i;:::-;;371:66;;;:::i;:::-;;189:20;;;;;;;;;;;;:::o;296:69::-;351:7;342:6;;:16;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;296:69;:::o;216:74::-;252:6;277;;;;;;;;;;;270:13;;216:74;:::o;443:54::-;484:6;;477:13;;;;;;;;;;;443:54::o;371:66::-;415:15;406:6;;:24;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;371:66::o;7:180:16:-;55:77;52:1;45:88;152:4;149:1;142:15;176:4;173:1;166:15;193:115;276:1;269:5;266:12;256:46;;282:18;;:::i;:::-;256:46;193:115;:::o;314:131::-;361:7;390:5;379:16;;396:43;433:5;396:43;:::i;:::-;314:131;;;:::o;451:::-;509:9;542:34;570:5;542:34;:::i;:::-;529:47;;451:131;;;:::o;588:147::-;683:45;722:5;683:45;:::i;:::-;678:3;671:58;588:147;;:::o;741:238::-;842:4;880:2;869:9;865:18;857:26;;893:79;969:1;958:9;954:17;945:6;893:79;:::i;:::-;741:238;;;;:::o;1066:117::-;1175:1;1172;1165:12;1312:109;1395:1;1388:5;1385:12;1375:40;;1411:1;1408;1401:12;1375:40;1312:109;:::o;1427:159::-;1483:5;1521:6;1508:20;1499:29;;1537:43;1574:5;1537:43;:::i;:::-;1427:159;;;;:::o;1592:349::-;1661:6;1710:2;1698:9;1689:7;1685:23;1681:32;1678:119;;;1716:79;;:::i;:::-;1678:119;1836:1;1861:63;1916:7;1907:6;1896:9;1892:22;1861:63;:::i;:::-;1851:73;;1807:127;1592:349;;;;:::o",
+  "sourceMap": "57:442:5:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:442:5:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;189:20;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;296:69;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;216:74;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;443:54;;;:::i;:::-;;371:66;;;:::i;:::-;;189:20;;;;;;;;;;;;:::o;296:69::-;351:7;342:6;;:16;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;296:69;:::o;216:74::-;252:6;277;;;;;;;;;;;270:13;;216:74;:::o;443:54::-;484:6;;477:13;;;;;;;;;;;443:54::o;371:66::-;415:15;406:6;;:24;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;371:66::o;7:180:16:-;55:77;52:1;45:88;152:4;149:1;142:15;176:4;173:1;166:15;193:115;276:1;269:5;266:12;256:46;;282:18;;:::i;:::-;256:46;193:115;:::o;314:131::-;361:7;390:5;379:16;;396:43;433:5;396:43;:::i;:::-;314:131;;;:::o;451:::-;509:9;542:34;570:5;542:34;:::i;:::-;529:47;;451:131;;;:::o;588:147::-;683:45;722:5;683:45;:::i;:::-;678:3;671:58;588:147;;:::o;741:238::-;842:4;880:2;869:9;865:18;857:26;;893:79;969:1;958:9;954:17;945:6;893:79;:::i;:::-;741:238;;;;:::o;1066:117::-;1175:1;1172;1165:12;1312:109;1395:1;1388:5;1385:12;1375:40;;1411:1;1408;1401:12;1375:40;1312:109;:::o;1427:159::-;1483:5;1521:6;1508:20;1499:29;;1537:43;1574:5;1537:43;:::i;:::-;1427:159;;;;:::o;1592:349::-;1661:6;1710:2;1698:9;1689:7;1685:23;1681:32;1678:119;;;1716:79;;:::i;:::-;1678:119;1836:1;1861:63;1916:7;1907:6;1896:9;1892:22;1861:63;:::i;:::-;1851:73;;1807:127;1592:349;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract Enum {\n    enum Status {\n        Pending,\n        Shipped,\n        Accepted,\n        Rejected,\n        Canceled\n    }\n\n    Status public status;\n\n    function get() public view returns (Status) {\n        return status;\n    }\n\n    function set(Status _status) public {\n        status = _status;\n    }\n\n    function cancel() public {\n        status = Status.Canceled;\n    }\n\n    function reset() public {\n        delete status;\n    }\n}\n",
   "sourcePath": "/Users/lap02139/Documents/Work3/solidty/contracts/Enum.sol",
   "ast": {
     "absolutePath": "project:/contracts/Enum.sol",
     "exportedSymbols": {
       "Enum": [
-        179
+        310
       ]
     },
-    "id": 180,
+    "id": 311,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 133,
+        "id": 264,
         "literals": [
           "solidity",
           "^",
@@ -1030,7 +1030,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:23:3"
+        "src": "32:23:5"
       },
       {
         "abstract": false,
@@ -1039,92 +1039,92 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 179,
+        "id": 310,
         "linearizedBaseContracts": [
-          179
+          310
         ],
         "name": "Enum",
-        "nameLocation": "66:4:3",
+        "nameLocation": "66:4:5",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Enum.Status",
-            "id": 139,
+            "id": 270,
             "members": [
               {
-                "id": 134,
+                "id": 265,
                 "name": "Pending",
-                "nameLocation": "99:7:3",
+                "nameLocation": "99:7:5",
                 "nodeType": "EnumValue",
-                "src": "99:7:3"
+                "src": "99:7:5"
               },
               {
-                "id": 135,
+                "id": 266,
                 "name": "Shipped",
-                "nameLocation": "116:7:3",
+                "nameLocation": "116:7:5",
                 "nodeType": "EnumValue",
-                "src": "116:7:3"
+                "src": "116:7:5"
               },
               {
-                "id": 136,
+                "id": 267,
                 "name": "Accepted",
-                "nameLocation": "133:8:3",
+                "nameLocation": "133:8:5",
                 "nodeType": "EnumValue",
-                "src": "133:8:3"
+                "src": "133:8:5"
               },
               {
-                "id": 137,
+                "id": 268,
                 "name": "Rejected",
-                "nameLocation": "151:8:3",
+                "nameLocation": "151:8:5",
                 "nodeType": "EnumValue",
-                "src": "151:8:3"
+                "src": "151:8:5"
               },
               {
-                "id": 138,
+                "id": 269,
                 "name": "Canceled",
-                "nameLocation": "169:8:3",
+                "nameLocation": "169:8:5",
                 "nodeType": "EnumValue",
-                "src": "169:8:3"
+                "src": "169:8:5"
               }
             ],
             "name": "Status",
-            "nameLocation": "82:6:3",
+            "nameLocation": "82:6:5",
             "nodeType": "EnumDefinition",
-            "src": "77:106:3"
+            "src": "77:106:5"
           },
           {
             "constant": false,
             "functionSelector": "200d2ed2",
-            "id": 142,
+            "id": 273,
             "mutability": "mutable",
             "name": "status",
-            "nameLocation": "203:6:3",
+            "nameLocation": "203:6:5",
             "nodeType": "VariableDeclaration",
-            "scope": 179,
-            "src": "189:20:3",
+            "scope": 310,
+            "src": "189:20:5",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_enum$_Status_$139",
+              "typeIdentifier": "t_enum$_Status_$270",
               "typeString": "enum Enum.Status"
             },
             "typeName": {
-              "id": 141,
+              "id": 272,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 140,
+                "id": 271,
                 "name": "Status",
                 "nameLocations": [
-                  "189:6:3"
+                  "189:6:5"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 139,
-                "src": "189:6:3"
+                "referencedDeclaration": 270,
+                "src": "189:6:5"
               },
-              "referencedDeclaration": 139,
-              "src": "189:6:3",
+              "referencedDeclaration": 270,
+              "src": "189:6:5",
               "typeDescriptions": {
-                "typeIdentifier": "t_enum$_Status_$139",
+                "typeIdentifier": "t_enum$_Status_$270",
                 "typeString": "enum Enum.Status"
               }
             },
@@ -1132,231 +1132,231 @@
           },
           {
             "body": {
-              "id": 150,
+              "id": 281,
               "nodeType": "Block",
-              "src": "260:30:3",
+              "src": "260:30:5",
               "statements": [
                 {
                   "expression": {
-                    "id": 148,
+                    "id": 279,
                     "name": "status",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 142,
-                    "src": "277:6:3",
+                    "referencedDeclaration": 273,
+                    "src": "277:6:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Status_$139",
+                      "typeIdentifier": "t_enum$_Status_$270",
                       "typeString": "enum Enum.Status"
                     }
                   },
-                  "functionReturnParameters": 147,
-                  "id": 149,
+                  "functionReturnParameters": 278,
+                  "id": 280,
                   "nodeType": "Return",
-                  "src": "270:13:3"
+                  "src": "270:13:5"
                 }
               ]
             },
             "functionSelector": "6d4ce63c",
-            "id": 151,
+            "id": 282,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "get",
-            "nameLocation": "225:3:3",
+            "nameLocation": "225:3:5",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 143,
+              "id": 274,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "228:2:3"
+              "src": "228:2:5"
             },
             "returnParameters": {
-              "id": 147,
+              "id": 278,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 146,
+                  "id": 277,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 151,
-                  "src": "252:6:3",
+                  "scope": 282,
+                  "src": "252:6:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Status_$139",
+                    "typeIdentifier": "t_enum$_Status_$270",
                     "typeString": "enum Enum.Status"
                   },
                   "typeName": {
-                    "id": 145,
+                    "id": 276,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 144,
+                      "id": 275,
                       "name": "Status",
                       "nameLocations": [
-                        "252:6:3"
+                        "252:6:5"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 139,
-                      "src": "252:6:3"
+                      "referencedDeclaration": 270,
+                      "src": "252:6:5"
                     },
-                    "referencedDeclaration": 139,
-                    "src": "252:6:3",
+                    "referencedDeclaration": 270,
+                    "src": "252:6:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Status_$139",
+                      "typeIdentifier": "t_enum$_Status_$270",
                       "typeString": "enum Enum.Status"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "251:8:3"
+              "src": "251:8:5"
             },
-            "scope": 179,
-            "src": "216:74:3",
+            "scope": 310,
+            "src": "216:74:5",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 161,
+              "id": 292,
               "nodeType": "Block",
-              "src": "332:33:3",
+              "src": "332:33:5",
               "statements": [
                 {
                   "expression": {
-                    "id": 159,
+                    "id": 290,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 157,
+                      "id": 288,
                       "name": "status",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 142,
-                      "src": "342:6:3",
+                      "referencedDeclaration": 273,
+                      "src": "342:6:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_Status_$139",
+                        "typeIdentifier": "t_enum$_Status_$270",
                         "typeString": "enum Enum.Status"
                       }
                     },
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 158,
+                      "id": 289,
                       "name": "_status",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 154,
-                      "src": "351:7:3",
+                      "referencedDeclaration": 285,
+                      "src": "351:7:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_Status_$139",
+                        "typeIdentifier": "t_enum$_Status_$270",
                         "typeString": "enum Enum.Status"
                       }
                     },
-                    "src": "342:16:3",
+                    "src": "342:16:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Status_$139",
+                      "typeIdentifier": "t_enum$_Status_$270",
                       "typeString": "enum Enum.Status"
                     }
                   },
-                  "id": 160,
+                  "id": 291,
                   "nodeType": "ExpressionStatement",
-                  "src": "342:16:3"
+                  "src": "342:16:5"
                 }
               ]
             },
             "functionSelector": "24b8ba5f",
-            "id": 162,
+            "id": 293,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "set",
-            "nameLocation": "305:3:3",
+            "nameLocation": "305:3:5",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 155,
+              "id": 286,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 154,
+                  "id": 285,
                   "mutability": "mutable",
                   "name": "_status",
-                  "nameLocation": "316:7:3",
+                  "nameLocation": "316:7:5",
                   "nodeType": "VariableDeclaration",
-                  "scope": 162,
-                  "src": "309:14:3",
+                  "scope": 293,
+                  "src": "309:14:5",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_Status_$139",
+                    "typeIdentifier": "t_enum$_Status_$270",
                     "typeString": "enum Enum.Status"
                   },
                   "typeName": {
-                    "id": 153,
+                    "id": 284,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 152,
+                      "id": 283,
                       "name": "Status",
                       "nameLocations": [
-                        "309:6:3"
+                        "309:6:5"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 139,
-                      "src": "309:6:3"
+                      "referencedDeclaration": 270,
+                      "src": "309:6:5"
                     },
-                    "referencedDeclaration": 139,
-                    "src": "309:6:3",
+                    "referencedDeclaration": 270,
+                    "src": "309:6:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Status_$139",
+                      "typeIdentifier": "t_enum$_Status_$270",
                       "typeString": "enum Enum.Status"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "308:16:3"
+              "src": "308:16:5"
             },
             "returnParameters": {
-              "id": 156,
+              "id": 287,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "332:0:3"
+              "src": "332:0:5"
             },
-            "scope": 179,
-            "src": "296:69:3",
+            "scope": 310,
+            "src": "296:69:5",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 170,
+              "id": 301,
               "nodeType": "Block",
-              "src": "396:41:3",
+              "src": "396:41:5",
               "statements": [
                 {
                   "expression": {
-                    "id": 168,
+                    "id": 299,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 165,
+                      "id": 296,
                       "name": "status",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 142,
-                      "src": "406:6:3",
+                      "referencedDeclaration": 273,
+                      "src": "406:6:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_Status_$139",
+                        "typeIdentifier": "t_enum$_Status_$270",
                         "typeString": "enum Enum.Status"
                       }
                     },
@@ -1364,79 +1364,79 @@
                     "operator": "=",
                     "rightHandSide": {
                       "expression": {
-                        "id": 166,
+                        "id": 297,
                         "name": "Status",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 139,
-                        "src": "415:6:3",
+                        "referencedDeclaration": 270,
+                        "src": "415:6:5",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_enum$_Status_$139_$",
+                          "typeIdentifier": "t_type$_t_enum$_Status_$270_$",
                           "typeString": "type(enum Enum.Status)"
                         }
                       },
-                      "id": 167,
+                      "id": 298,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
-                      "memberLocation": "422:8:3",
+                      "memberLocation": "422:8:5",
                       "memberName": "Canceled",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 138,
-                      "src": "415:15:3",
+                      "referencedDeclaration": 269,
+                      "src": "415:15:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_Status_$139",
+                        "typeIdentifier": "t_enum$_Status_$270",
                         "typeString": "enum Enum.Status"
                       }
                     },
-                    "src": "406:24:3",
+                    "src": "406:24:5",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_enum$_Status_$139",
+                      "typeIdentifier": "t_enum$_Status_$270",
                       "typeString": "enum Enum.Status"
                     }
                   },
-                  "id": 169,
+                  "id": 300,
                   "nodeType": "ExpressionStatement",
-                  "src": "406:24:3"
+                  "src": "406:24:5"
                 }
               ]
             },
             "functionSelector": "ea8a1af0",
-            "id": 171,
+            "id": 302,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "cancel",
-            "nameLocation": "380:6:3",
+            "nameLocation": "380:6:5",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 163,
+              "id": 294,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "386:2:3"
+              "src": "386:2:5"
             },
             "returnParameters": {
-              "id": 164,
+              "id": 295,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "396:0:3"
+              "src": "396:0:5"
             },
-            "scope": 179,
-            "src": "371:66:3",
+            "scope": 310,
+            "src": "371:66:5",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 177,
+              "id": 308,
               "nodeType": "Block",
-              "src": "467:30:3",
+              "src": "467:30:5",
               "statements": [
                 {
                   "expression": {
-                    "id": 175,
+                    "id": 306,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1444,16 +1444,16 @@
                     "nodeType": "UnaryOperation",
                     "operator": "delete",
                     "prefix": true,
-                    "src": "477:13:3",
+                    "src": "477:13:5",
                     "subExpression": {
-                      "id": 174,
+                      "id": 305,
                       "name": "status",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 142,
-                      "src": "484:6:3",
+                      "referencedDeclaration": 273,
+                      "src": "484:6:5",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_enum$_Status_$139",
+                        "typeIdentifier": "t_enum$_Status_$270",
                         "typeString": "enum Enum.Status"
                       }
                     },
@@ -1462,53 +1462,53 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 176,
+                  "id": 307,
                   "nodeType": "ExpressionStatement",
-                  "src": "477:13:3"
+                  "src": "477:13:5"
                 }
               ]
             },
             "functionSelector": "d826f88f",
-            "id": 178,
+            "id": 309,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "reset",
-            "nameLocation": "452:5:3",
+            "nameLocation": "452:5:5",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 172,
+              "id": 303,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "457:2:3"
+              "src": "457:2:5"
             },
             "returnParameters": {
-              "id": 173,
+              "id": 304,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "467:0:3"
+              "src": "467:0:5"
             },
-            "scope": 179,
-            "src": "443:54:3",
+            "scope": 310,
+            "src": "443:54:5",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 180,
-        "src": "57:442:3",
+        "scope": 311,
+        "src": "57:442:5",
         "usedErrors": []
       }
     ],
-    "src": "32:468:3"
+    "src": "32:468:5"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.16+commit.07a7930e.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.9",
-  "updatedAt": "2022-09-20T01:34:20.873Z",
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-09-20T02:28:12.024Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

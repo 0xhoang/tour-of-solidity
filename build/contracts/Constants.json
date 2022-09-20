@@ -547,23 +547,23 @@
       "name": "#utility.yul"
     }
   ],
-  "sourceMap": "57:147:1:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "57:147:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;167:34;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;82:79;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;167:34;198:3;167:34;:::o;82:79::-;119:42;82:79;:::o;7:77:16:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o;442:126::-;479:7;519:42;512:5;508:54;497:65;;442:126;;;:::o;574:96::-;611:7;640:24;658:5;640:24;:::i;:::-;629:35;;574:96;;;:::o;676:118::-;763:24;781:5;763:24;:::i;:::-;758:3;751:37;676:118;;:::o;800:222::-;893:4;931:2;920:9;916:18;908:26;;944:71;1012:1;1001:9;997:17;988:6;944:71;:::i;:::-;800:222;;;;:::o",
+  "sourceMap": "57:147:3:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:147:3:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;167:34;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;82:79;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;167:34;198:3;167:34;:::o;82:79::-;119:42;82:79;:::o;7:77:16:-;44:7;73:5;62:16;;7:77;;;:::o;90:118::-;177:24;195:5;177:24;:::i;:::-;172:3;165:37;90:118;;:::o;214:222::-;307:4;345:2;334:9;330:18;322:26;;358:71;426:1;415:9;411:17;402:6;358:71;:::i;:::-;214:222;;;;:::o;442:126::-;479:7;519:42;512:5;508:54;497:65;;442:126;;;:::o;574:96::-;611:7;640:24;658:5;640:24;:::i;:::-;629:35;;574:96;;;:::o;676:118::-;763:24;781:5;763:24;:::i;:::-;758:3;751:37;676:118;;:::o;800:222::-;893:4;931:2;920:9;916:18;908:26;;944:71;1012:1;1001:9;997:17;988:6;944:71;:::i;:::-;800:222;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\ncontract Constants {\n    address public constant MY_ADDRESS = 0x777788889999AaAAbBbbCcccddDdeeeEfFFfCcCc;\n    uint public constant MY_UINT = 123;\n}\n",
   "sourcePath": "/Users/lap02139/Documents/Work3/solidty/contracts/Constants.sol",
   "ast": {
     "absolutePath": "project:/contracts/Constants.sol",
     "exportedSymbols": {
       "Constants": [
-        102
+        233
       ]
     },
-    "id": 103,
+    "id": 234,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 95,
+        "id": 226,
         "literals": [
           "solidity",
           "^",
@@ -571,7 +571,7 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "32:23:1"
+        "src": "32:23:3"
       },
       {
         "abstract": false,
@@ -580,24 +580,24 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 102,
+        "id": 233,
         "linearizedBaseContracts": [
-          102
+          233
         ],
         "name": "Constants",
-        "nameLocation": "66:9:1",
+        "nameLocation": "66:9:3",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
             "functionSelector": "3a756cec",
-            "id": 98,
+            "id": 229,
             "mutability": "constant",
             "name": "MY_ADDRESS",
-            "nameLocation": "106:10:1",
+            "nameLocation": "106:10:3",
             "nodeType": "VariableDeclaration",
-            "scope": 102,
-            "src": "82:79:1",
+            "scope": 233,
+            "src": "82:79:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -605,10 +605,10 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 96,
+              "id": 227,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "82:7:1",
+              "src": "82:7:3",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -617,14 +617,14 @@
             },
             "value": {
               "hexValue": "307837373737383838383939393941614141624262624363636364644464656565456646466643634363",
-              "id": 97,
+              "id": 228,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "119:42:1",
+              "src": "119:42:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
                 "typeString": "address"
@@ -636,13 +636,13 @@
           {
             "constant": true,
             "functionSelector": "1f6649e3",
-            "id": 101,
+            "id": 232,
             "mutability": "constant",
             "name": "MY_UINT",
-            "nameLocation": "188:7:1",
+            "nameLocation": "188:7:3",
             "nodeType": "VariableDeclaration",
-            "scope": 102,
-            "src": "167:34:1",
+            "scope": 233,
+            "src": "167:34:3",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -650,10 +650,10 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 99,
+              "id": 230,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
-              "src": "167:4:1",
+              "src": "167:4:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_uint256",
                 "typeString": "uint256"
@@ -661,14 +661,14 @@
             },
             "value": {
               "hexValue": "313233",
-              "id": 100,
+              "id": 231,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
               "kind": "number",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "198:3:1",
+              "src": "198:3:3",
               "typeDescriptions": {
                 "typeIdentifier": "t_rational_123_by_1",
                 "typeString": "int_const 123"
@@ -678,20 +678,20 @@
             "visibility": "public"
           }
         ],
-        "scope": 103,
-        "src": "57:147:1",
+        "scope": 234,
+        "src": "57:147:3",
         "usedErrors": []
       }
     ],
-    "src": "32:173:1"
+    "src": "32:173:3"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.16+commit.07a7930e.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.9",
-  "updatedAt": "2022-09-20T01:34:20.870Z",
+  "schemaVersion": "3.4.10",
+  "updatedAt": "2022-09-20T02:28:12.022Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
