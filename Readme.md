@@ -1,10 +1,12 @@
 ### Truffle
 
 - install: yarn install truffle -g
+- install unbox: truffle unbox metacoin
 - init: truffle init
 - compiler: truffle compile
 - deploy: truffle migrate --network development
 - develop: truffle develop
+- test: truffle test
 
 ### Software version
 

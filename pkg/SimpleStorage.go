@@ -1,7 +1,7 @@
 // Code generated - DO NOT EDIT.
 // This file is a generated binding and any manual changes will be lost.
 
-package pkg
+package SimpleStorage
 
 import (
 	"errors"
@@ -31,33 +31,11 @@ var (
 // SimpleStorageMetaData contains all meta data concerning the SimpleStorage contract.
 var SimpleStorageMetaData = &bind.MetaData{
 	ABI: "[{\"inputs\":[],\"name\":\"get\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"num\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_num\",\"type\":\"uint256\"}],\"name\":\"set\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]",
-	Bin: "0x608060405234801561001057600080fd5b5061017f806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80634e70b1dc1461004657806360fe47b1146100645780636d4ce63c14610080575b600080fd5b61004e61009e565b60405161005b91906100d0565b60405180910390f35b61007e6004803603810190610079919061011c565b6100a4565b005b6100886100ae565b60405161009591906100d0565b60405180910390f35b60005481565b8060008190555050565b60008054905090565b6000819050919050565b6100ca816100b7565b82525050565b60006020820190506100e560008301846100c1565b92915050565b600080fd5b6100f9816100b7565b811461010457600080fd5b50565b600081359050610116816100f0565b92915050565b600060208284031215610132576101316100eb565b5b600061014084828501610107565b9150509291505056fea2646970667358221220b95a736fc9db9ccd2b6c7c0b352c1b2ec7609baaa4f0177fe420636547bde3a564736f6c63430008100033",
 }
 
 // SimpleStorageABI is the input ABI used to generate the binding from.
 // Deprecated: Use SimpleStorageMetaData.ABI instead.
 var SimpleStorageABI = SimpleStorageMetaData.ABI
-
-// SimpleStorageBin is the compiled bytecode used for deploying new contracts.
-// Deprecated: Use SimpleStorageMetaData.Bin instead.
-var SimpleStorageBin = SimpleStorageMetaData.Bin
-
-// DeploySimpleStorage deploys a new Ethereum contract, binding an instance of SimpleStorage to it.
-func DeploySimpleStorage(auth *bind.TransactOpts, backend bind.ContractBackend) (common.Address, *types.Transaction, *SimpleStorage, error) {
-	parsed, err := SimpleStorageMetaData.GetAbi()
-	if err != nil {
-		return common.Address{}, nil, nil, err
-	}
-	if parsed == nil {
-		return common.Address{}, nil, nil, errors.New("GetABI returned nil")
-	}
-
-	address, tx, contract, err := bind.DeployContract(auth, *parsed, common.FromHex(SimpleStorageBin), backend)
-	if err != nil {
-		return common.Address{}, nil, nil, err
-	}
-	return address, tx, &SimpleStorage{SimpleStorageCaller: SimpleStorageCaller{contract: contract}, SimpleStorageTransactor: SimpleStorageTransactor{contract: contract}, SimpleStorageFilterer: SimpleStorageFilterer{contract: contract}}, nil
-}
 
 // SimpleStorage is an auto generated Go binding around an Ethereum contract.
 type SimpleStorage struct {
